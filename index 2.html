@@ -4,7 +4,7 @@
     <script src="https://unpkg.com/aframe-extras@7.2.0/dist/aframe-extras.min.js"></script>
   </head>
   <body>
-	<a-scnen>
+	<a-scene>
 		<a-sky color="#ECECEC"></a-sky>
 		<a-camera position="0 1.5 0"></a-camera>
 		
@@ -12,8 +12,9 @@
 			<a-asset-item id="myModel" src="gatling.glb"></a-asset-item>
 		</a-assets>
 		
-		<a-entity gltf-model="#myModel"></a-entity>
+		<a-entity gltf-model="#myModel" animation-mixer></a-entity>
 		
-	</a-scnen>
+	</a-scene>
   </body>
 </html>
+
